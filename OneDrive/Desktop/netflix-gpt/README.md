@@ -1,5 +1,8 @@
 # Creating a Frontend project
 - Login Page
+- git add .
+- git commit -m "mesaage"
+- git push -u origin master
 
 # Getting Started with Create React App
 
