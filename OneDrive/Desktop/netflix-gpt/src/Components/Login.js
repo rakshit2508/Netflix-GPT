@@ -6,6 +6,7 @@ import { auth } from '../Utils/firebase';
 //import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../Utils/userSlice';
+import {USER_AVATAR} from '../Utils/constants'
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -39,7 +40,7 @@ const Login = () => {
         const user = userCredential.user;
        // console.log(user)
        updateProfile(user, {
-        displayName: name.current.value, photoURL: "https://media.licdn.com/dms/image/D5603AQFFyemcsTaTVw/profile-displayphoto-shrink_100_100/0/1702938579875?e=1710979200&v=beta&t=8nDLz8WUnDXbP5yt7P5_u2snGWEfTDmx82ICPDWu2t4"
+        displayName: name.current.value, photoURL: USER_AVATAR,
       }).then(() => {
         // Profile updated!
         // we were not dispatching action after updation so we need to do here again
