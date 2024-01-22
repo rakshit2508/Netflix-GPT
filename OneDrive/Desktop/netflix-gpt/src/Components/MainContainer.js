@@ -12,7 +12,7 @@ if(!movies) return; // Early return
 //- coz initial state before api load its value is null and we taking first element out of null
 const mainMovie = movies[0]; 
 
-console.log(mainMovie);
+
 // check what data we are getting and extract accordingly
 
 const {original_title , overview, id} = mainMovie;

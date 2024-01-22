@@ -22,9 +22,9 @@ const Login = () => {
   const handleButtonClick = () =>
   {
     // validation the form data
-    // console.log(email); to know why we have written email.current.value
+    //print to know why we have written email.current.value
     const message  = checkValidData(email.current.value, password.current.value);
-    //console.log(message);
+    
     setErrorMessage(message);
     if(message) return;
 
@@ -38,7 +38,7 @@ const Login = () => {
        .then((userCredential) => {
        // Signed up 
         const user = userCredential.user;
-       // console.log(user)
+       
        updateProfile(user, {
         displayName: name.current.value, photoURL: USER_AVATAR,
       }).then(() => {
@@ -72,7 +72,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
-        //console.log(user);
+        
         
         //navigate("/browse");
         
