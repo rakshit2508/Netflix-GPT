@@ -1,5 +1,7 @@
 # Creating a Frontend project
-- Login Page
+
+- Create React App
+- Configured Tailwind CSS
 - Header
 - Routing of App
 - Login Form
@@ -33,6 +35,10 @@
 - TMDB Image CDN URL
 - Made the browse page amazing with Tailwind CSS
 - usePopularMovies Custom hook
+- GPT search Page
+- GPT search bar
+- Multi-language feature in our app
+
 
 
 # git commands to commit
